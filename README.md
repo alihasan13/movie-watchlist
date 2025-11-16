@@ -124,7 +124,7 @@ The app will open at [http://localhost:3000](http://localhost:3000)
 
 
 ### Demo Video
-![Preview](https://drive.google.com/file/d/1Hpq-7dYd5LTQFex1HoMoypX8QhGs1gPn/view?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1Hpq-7dYd5LTQFex1HoMoypX8QhGs1gPn/view?usp=sharing)
 
 ---
 **Version:** 1.0.0  
