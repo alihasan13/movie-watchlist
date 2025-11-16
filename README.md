@@ -122,6 +122,10 @@ The app will open at [http://localhost:3000](http://localhost:3000)
 1. Open movie details
 2. Click "Remove from Watchlist"
 
+
+### Demo Video
+![Preview](https://drive.google.com/file/d/1Hpq-7dYd5LTQFex1HoMoypX8QhGs1gPn/view?usp=sharing)
+
 ---
 **Version:** 1.0.0  
 **Last Updated:** November 2024
