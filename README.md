@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 🎬 CineVault - Movie Watchlist App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive movie watchlist application built with React, featuring a modern glassmorphic design, smooth animations, and seamless user experience.
 
-## Available Scripts
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🔐 User Authentication
+- Sign up and login functionality
+- Mock authentication with localStorage persistence
+- Session management across page reloads
+- Protected routes for watchlist access
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Movie Search
+- Real-time movie search powered by OMDb API
+- Beautiful grid layout with movie posters
+- Loading states and error handling
+- Responsive design for all devices
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📽️ Movie Details
+- Comprehensive movie information (plot, cast, ratings, runtime)
+- IMDb ratings and vote counts
+- Genre tags and release dates
+- Add/Remove from watchlist functionality
 
-### `npm test`
+### ❤️ Personal Watchlist
+- Save favorite movies to your personal collection
+- Per-user watchlist storage
+- Quick access to saved movies
+- Easy removal from watchlist
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨 Design Highlights
+- **Glassmorphism UI** - Modern frosted glass effects
+- **Smooth Animations** - Fade-in, scale, and hover effects
+- **Gradient Backgrounds** - Beautiful purple-pink-red gradients
+- **Micro-interactions** - Button hovers, card animations
+- **Mobile-First** - Fully responsive across all devices
+- **Dark Theme** - Eye-friendly dark interface
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Quick Start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- OMDb API Key (free)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**
+```bash
+git clone https://github.com/alihasan13/movie-watchlist.git
+cd movie-watchlist
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Get your OMDb API Key**
+   - Visit: [http://www.omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx)
+   - Select "FREE" plan (1,000 daily requests)
+   - Enter your email and activate via the link sent to you
+   - Copy your API key
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Create environment file**
+```bash
+# Create .env file in root directory
+touch .env
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add your API key to `.env`:
+```env
+REACT_APP_OMDB_API_KEY=your_api_key_here
+```
 
-## Learn More
+5. **Start the development server**
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will open at [http://localhost:3000](http://localhost:3000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 1. Searching Movies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate to the Search page (default landing)
+2. Enter a movie title in the search bar
+3. Click "Search" or press Enter
+4. Browse results in the grid layout
+5. Click on any movie card to view details
 
-### Analyzing the Bundle Size
+**Example Searches:**
+- "Inception"
+- "The Matrix"
+- "Avengers"
+- "Titanic"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2. Managing Watchlist
 
-### Making a Progressive Web App
+#### Adding Movies
+1. Search for a movie
+2. Hover over the movie card
+3. Click "+ Add" button
+   - OR -
+1. Open movie details
+2. Click "Add to Watchlist" button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Viewing Watchlist
+1. Click "Watchlist" in navigation
+2. View all saved movies
+3. Click any movie to see details
 
-### Advanced Configuration
+#### Removing Movies
+1. Go to Watchlist page
+2. Hover over a movie card
+3. Click "Remove" button
+   - OR -
+1. Open movie details
+2. Click "Remove from Watchlist"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+**Version:** 1.0.0  
+**Last Updated:** November 2024
